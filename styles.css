@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+:root {
+   --White: hsl(0, 0%, 100%);
+   --Stone-100: hsl(30, 54%, 90%);
+   --Stone-150: hsl(30, 18%, 87%);
+   --Stone-600: hsl(30, 10%, 34%);
+   --Stone-900: hsl(24, 5%, 18%);
+   --Brown-800: hsl(14, 45%, 36%);
+   --Rose-800: hsl(332, 51%, 32%);
+   --Rose-50: hsl(330, 100%, 98%);
+}
+
+* {
+   font-family: "Outfit", sans-serif;
+   font-size: 16px;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+h1,
+h2 {
+   font-family: "Young Serif", serif;
+}
+
+body {
+   background-color: var(--Stone-100);
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.mt-2 {
+   margin-top: 2rem;
+}
+.sec-title {
+   font-size: 1.78em;
+   color: var(--Brown-800);
+   font-weight: 500;
+}
+.container {
+   background-color: var(--White);
+   text-align: left;
+   margin: 83px 0 auto 0;
+   width: 50%;
+   border-radius: 16px;
+}
+.container .omelette {
+   width: 90%;
+   margin-left: 5%;
+   margin-top: 5%;
+   border-radius: 8px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.container .header {
+   text-align: start;
+   margin: 2.345em 5%;
+}
+.container .header .title {
+   font-size: 2.4em;
+   font-weight: 400;
+}
+.container .header .subtitle {
+   font-size: 1em;
+   color: #555539;
+   padding-bottom: 1.25em;
+   opacity: 90%;
+   margin-top: 22.4px;
+   margin-bottom: 1em;
+}
+.container .preparation {
+   background-color: #fff7fc;
+   padding: 1.25em 0;
+   width: 100%;
+   height: 180px;
+   border-radius: 8px;
+   line-height: 1.5em;
+}
+.container .preparation h3 {
+   margin-left: 35px;
+   color: var(--Rose-800);
+   font-size: 1.3em;
+   font-weight: 600;
+   margin-bottom: 0;
+}
+
+.container .preparation .steps-time {
+   /* margin-left: 65px; */
+   margin-left: 30px;
+   padding-top: 1.25em;
+   font-family: "Outfit", sans-serif;
+   list-style-position: inside;
+}
+
+.container .preparation .steps-time li {
+   line-height: 1.8em;
+   padding-left: 20px;
+}
+.container .preparation .steps-time li::marker {
+   color: var(--Rose-800);
+   line-height: 1.8em;
+   font-weight: 500;
+}
+
+.container .preparation .steps-time li span {
+   padding-left: 10px;
+   font-weight: 600;
+   font-size: 1em;
+}
+/*
+---------------------
+-----ingredients-----
+---------------------
+*/
+.ingredients {
+   padding-bottom: 1.25em;
+   width: 100%;
+   height: 180px;
+   border-radius: 8px;
+   line-height: 1.5em;
+}
+.ingredients h2 {
+   margin-bottom: 20px;
+}
+.ingredients ul {
+   margin-left: 10px;
+   font-family: "Outfit", sans-serif;
+   list-style-position: inside;
+}
+.ingredients ul li {
+   line-height: 1.8em;
+}
+.ingredients ul li span {
+   padding-left: 10px;
+}
+.ingredients ul li::marker {
+   color: var(--Rose-800);
+   line-height: 1.5em;
+   font-weight: 500;
+}
+.container header hr {
+   border: 0.1px solid var(--Stone-600);
+   margin-top: 1.25em;
+   margin-bottom: 1.25em;
+   opacity: 0.8;
+}
+/*
+.container .preparation .steps-time li span {
+   font-size: 1em;
+   line-height: 1.204em;
+   font-weight: 600;
+} */
