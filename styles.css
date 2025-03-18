@@ -42,9 +42,9 @@ body {
 .container {
    background-color: var(--White);
    text-align: left;
-   margin: 83px 0 auto 0;
+   margin: 85px 0;
    width: 50%;
-   border-radius: 16px;
+   border-radius: 20px;
 }
 .container .omelette {
    width: 90%;
@@ -122,6 +122,7 @@ body {
    height: 180px;
    border-radius: 8px;
    line-height: 1.5em;
+   margin-bottom: 2.2em;
 }
 .ingredients h2 {
    margin-bottom: 20px;
@@ -143,14 +144,89 @@ body {
    font-weight: 500;
 }
 .container header hr {
-   border: 0.1px solid var(--Stone-600);
+   border: 0;
    margin-top: 1.25em;
    margin-bottom: 1.25em;
-   opacity: 0.8;
+   background-color: var(--Stone-600);
+   height: 1px;
+   opacity: 0.2;
 }
+
 /*
-.container .preparation .steps-time li span {
+----------------------
+-----instructions------ 
+----------------------
+*/
+
+.instructions {
+   margin-bottom: 2.2em;
+   width: 100%;
+   line-height: 1.5em;
+}
+
+.instructions ol {
+   margin-top: 25px;
+   margin-left: 25px;
+}
+.instructions ol li {
+   line-height: 1.5em;
+   margin-bottom: 0.6em;
+   padding-left: 15px;
+   color: var(--Stone-600);
+}
+.instructions ol li::marker {
+   color: var(--Rose-800);
+   font-weight: 700;
    font-size: 1em;
-   line-height: 1.204em;
+}
+.instructions ol li strong {
+   color: var(--Stone-900);
+}
+
+/*
+----------------------
+------nutrition------- 
+----------------------
+*/
+
+.nutrition {
+   width: 100%;
+   line-height: 1.5em;
+   margin-bottom: 2.2em;
+   color: var(--Stone-600);
+}
+.nutrition h2 {
+   margin-bottom: 20px;
+}
+
+.nutrition p {
+   margin: 20px 0;
+}
+
+.table-nutrition {
+   display: flex;
+   flex-direction: column;
+   gap: 8px;
+   padding: 10px 0;
+}
+.table-nutrition .table-row {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 8px 0 0 35px;
+}
+.table-nutrition .table-row span {
+   flex: 1;
+}
+.table-nutrition .table-row span:nth-of-type(2) {
+   color: var(--Rose-800);
    font-weight: 600;
-} */
+}
+.table-nutrition .line {
+   width: 100%;
+   border: 0;
+   background-color: var(--Stone-600);
+   height: 1px;
+   opacity: 0.2;
+   margin: 0;
+}
